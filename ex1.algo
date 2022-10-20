@@ -19,6 +19,6 @@ Read (c)
         END_IF
         RETURN x ;
     END
-    min3(a,b,c) <-min2(c())
+    min3(a,b,c) <-min2(c(a,b))
 Write(min3, "est le minimum entre a,b et c")
 END

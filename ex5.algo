@@ -1,6 +1,41 @@
-ALGORITHM algorithm_name
+ALGORITHM Position Ch
 VAR
-    set_declarations
+    N, Pos : INTEGER
+    ch,t,c : CHAR
 BEGIN
-    set_instructions
+t[] <- 0
+    REPEAT
+        Write("Entrer la valeur de N <= 10")
+        Read(N)
+    UNTIL (N>0 || N<11)
+    PROCEDURE Remp(a: CHAR; M: IntEGER)
+    VAR
+        t1: CHAR
+        i: INTEGER
+    BEGIN
+        Write("Taper un caractère a")
+        FOR i FROM 1 TO M DO
+            t1[] <- t1[a]
+            i <- i+1
+            Write("Le tableu de caractères est", t1["a"])
+        END_FOR
+    END
+    t[] <- Remp(t[],ch)
+    FUNCTION Posi(y) : INTEGER
+    VAR
+        t2: CHAR
+        P,x,j :INTEGER
+    BEGIN
+    j <- 0
+        FOR j FROM 1 TO y DO
+            J <- j+1
+            IF (x = t[j]) THEN
+                P <- j
+            ELSE
+                P <- 0
+            END_IF
+        END_FOR
+        RETURN P ;
+    END
+    POS(c) <- Posi(c)
 END
