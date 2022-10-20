@@ -1,0 +1,19 @@
+ALGORITHM Factoriel
+VAR
+    f,n: INTEGER
+BEGIN
+    Write("Taper un entier n")
+    Read(n)
+    FUNCTION FACT(d) : INTEGER
+    VAR
+        i: INTEGER
+    BEGIN
+        FOR i FROM 2 TO d  DO
+            d = d*i
+            i<- i+1
+        END_FOR
+        RETURN x ;
+    END
+    f <- FACT
+    Write(f, "est le factoriel de n")
+END

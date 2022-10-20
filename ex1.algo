@@ -1,0 +1,24 @@
+ALGORITHM Minimum2
+VAR
+    a,b,c,min3: INTEGER
+BEGIN
+Write ("Entrer la valeur de a");
+Read (a)
+Write ("Entrer la valeur de b");
+Read (b)
+Write ("Entrer la valeur de c");
+Read (c)
+    FUNCTION min2(y,z) : INTEGER
+    VAR
+        x :INTEGER
+    BEGIN
+        IF (y>=z) THEN
+            x <-z
+        ELSE
+            x <-y
+        END_IF
+        RETURN x ;
+    END
+    min3(a,b,c) <-min2(c())
+Write(min3, "est le minimum entre a,b et c")
+END

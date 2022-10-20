@@ -1,0 +1,18 @@
+ALGORITHM algorithm_name
+VAR
+    t1,t2,t3,n,m,i,j,k: INTEGER
+BEGIN
+    Write("Entrer un nombre n ")
+    Read(n)
+    Write("Entrer un nombre m ")
+    Read(m)
+    FOR i FROM 0 TO n-1  DO
+            Write("Entrer l'élément du tableux")
+            Read(t1[i])
+            i <- i+1
+    END_FOR
+    FOR j FROM 0 TO m-1  DO
+        Write("Enter l'élément du tableux")
+        Read(t2[j])
+    END_FOR
+END
