@@ -1,18 +1,24 @@
-ALGORITHM algorithm_name
+ALGORITHM Fusion de Tab
 VAR
-    t1,t2,t3,n,m,i,j,k: INTEGER
+    t1[i],t2[j],t[k]: INTEGER
 BEGIN
-    Write("Entrer un nombre n ")
-    Read(n)
-    Write("Entrer un nombre m ")
-    Read(m)
-    FOR i FROM 0 TO n-1  DO
-            Write("Entrer l'élément du tableux")
-            Read(t1[i])
-            i <- i+1
-    END_FOR
-    FOR j FROM 0 TO m-1  DO
-        Write("Enter l'élément du tableux")
-        Read(t2[j])
-    END_FOR
+    FUNCTION Fusion(a[m],b[n]) : INTEGER
+    VAR
+        c[x]:INTEGER
+    BEGIN
+        m <- 0
+        n <- 0
+        x <- 0
+        IF (a[m]<=b[n]) THEN
+            c[x] <- a[m]
+            m <- m+1
+            x <- x + 1
+        ELSE
+            c[x] <- b[n]
+            n <- n + 1
+            x <- x + 1
+        END_IF
+        RETURN c[x] ;
+    END
+    t3[k] <- Fusion(t1[i],t2[j])
 END
