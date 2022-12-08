@@ -17,7 +17,6 @@ t[] <- 0
         FOR i FROM 1 TO M DO
             t1[] <- t1[a]
             i <- i+1
-            Write("Le tableu de caractères est", t1["a"])
         END_FOR
     END
     t[] <- Remp(t[],ch)
