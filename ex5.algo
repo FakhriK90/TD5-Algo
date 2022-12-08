@@ -3,7 +3,6 @@ VAR
     N, Pos : INTEGER
     ch,t,c : CHAR
 BEGIN
-t[] <- 0
     REPEAT
         Write("Entrer la valeur de N <= 10")
         Read(N)
@@ -13,13 +12,13 @@ t[] <- 0
         t1: CHAR
         i: INTEGER
     BEGIN
-        Write("Taper un caractère a")
-        FOR i FROM 1 TO M DO
-            t1[] <- t1[a]
-            i <- i+1
-        END_FOR
+    FOR i FROM 1 TO M  DO
+        ("Enter la valeur de l'élément de l'indice")
+        Read(i)
+    END_FOR
+    Write("Tableau", t[i])
     END
-    t[] <- Remp(t[],ch)
+    t[i] <- Remp(t[i])
     FUNCTION Posi(y) : INTEGER
     VAR
         t2: CHAR
